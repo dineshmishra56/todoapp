@@ -21,8 +21,8 @@ export const TodoList = () => {
   };
 
  const confirmEdit = (id) => {
-    dispatch(updateTodo({id, newtext: editingText}))
-    setEditingId("")
+    dispatch(updateTodo({ id, newText: editingText }));
+    setEditingId(null);
  }
 
   return (
